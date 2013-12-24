@@ -11,7 +11,6 @@ set :session_secret, ENV['SECRET_TOKEN'] || SecureRandom.hex
 
 use OmniAuth::Builder do
   provider :saml,
-  :assertion_consumer_service_url     => settings.auth['service_url'],
   :issuer                             => "http://localhost:4567",
   :idp_sso_target_url                 => settings.auth['target_url'],
   :idp_cert_fingerprint               => settings.auth['fingerprint'],
