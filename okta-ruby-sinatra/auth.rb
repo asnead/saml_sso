@@ -14,13 +14,14 @@ use OmniAuth::Builder do
   :issuer                             => "http://localhost:4567",
   :idp_sso_target_url                 => settings.auth['target_url'],
   :idp_cert_fingerprint               => settings.auth['fingerprint'],
-  :name_identifier_format             => "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+  :name_identifier_format             => "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+  :idp_sso_target_url_runtime_params  => {:redirectUrl => :RelayState}
 end
 
 helpers do
   def protected!
     return if authorized?
-    redirect to('/auth/saml')
+    redirect to("/auth/saml?redirectUrl=#{URI::encode(request.path)}")
   end
 
   def authorized?

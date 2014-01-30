@@ -9,8 +9,13 @@ get '/' do
   "Hello " + session[:user_id]
 end
 
+get '/hello' do
+    protected!
+    "Hello World!"
+end
+
 post '/auth/:name/callback' do
   auth = request.env['omniauth.auth']
   session[:user_id] = auth[:uid]
-  redirect to("/")
+  redirect to(params[:RelayState] || '/')
 end
