@@ -1,7 +1,6 @@
 {
 	"auth": {
-		"fingerprint":"",
-		"target_url":""
-	}
-
+    "entryPoint": "", /* Redirect Login URL */
+		"cert": "" /* X509Certificate content from IDP metadata */
+  }
 }
