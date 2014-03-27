@@ -1,0 +1,6 @@
+{
+	"auth": {
+    "entryPoint": "", /* Redirect Login URL */
+		"cert": "" /* X509Certificate content from IDP metadata */
+  }
+}
