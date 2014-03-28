@@ -11,11 +11,10 @@ You need the X509 cert string and target url from Okta. Config them in [config.j
 For the sample configuration, please refer the my.thoughtworks.com page for okta samples.
 
 In order to configure your okta application, remember to create it from the SAML 2.0 Template using the following parameters:
-Application labelOkta Node.js TestForce Authentication
 
 | Setting              | Value                                                     |
 | ---------------------|---------------------------------------------------------- |
-| Post Back URL        | http://localhost:3000/login/callbackName                  |
+| Post Back URL        | http://localhost:3000/login/callback                      |
 | ID Format            | EmailAddress                                              |
 | Recipient            | http://localhost:3000/                                    |
 | Audience Restriction | http://localhost:3000/                                    |
