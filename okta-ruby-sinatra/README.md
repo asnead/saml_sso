@@ -14,4 +14,4 @@ page for okta samples.
 
 Following is the server side setup of Okta application:
 
-![alt text](okta-server-setup.png?raw=true "Okta Server Setup")
+![alt text](../okta-server-setup.png?raw=true "Okta Server Setup")
