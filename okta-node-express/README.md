@@ -7,9 +7,6 @@ The idea is only to show how to integrate and what options to provide when confi
 
 You need the X509 cert string and target url from Okta. Config them in [config.json](config.json)  You can get these details from the Okta team when you ask them to configure you application in Okta.
 
-
-For the sample configuration, please refer the my.thoughtworks.com page for okta samples.
-
 In order to configure your okta application, remember to create it from the SAML 2.0 Template using the following parameters:
 
 | Setting              | Value                                                     |

@@ -1,9 +1,0 @@
-source "http://rubygems.org"
-ruby '1.9.3', :engine => 'jruby', :engine_version => '1.7.4'
-
-gem 'sinatra'
-gem 'sinatra-contrib'
-gem "omniauth"
-gem "omniauth-saml"
-gem "nokogiri", "1.6.0", :path => "local_gems/nokogiri-1.6.0-java" #https://github.com/uday-rayala/nokogiri/commits/jruby commit: ebc8b8156b13bf30cc7eca45d53047fa71085de8
-
